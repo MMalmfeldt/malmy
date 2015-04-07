@@ -28,6 +28,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem 'bootstrap-sass', '~> 3.3.0'
+
 gem 'autoprefixer-rails'
 
 group :doc do
