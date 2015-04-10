@@ -5,6 +5,7 @@
 }
 
 .circle {
+    font-family: 'action_manregular', Helvetica, sans-serif;
     font-weight:bold;
     font-style: italic;
     position: relative;
@@ -34,12 +35,17 @@
 
 .links {
     padding-top:26px;
+    text-align:center;
+    word-spacing:30px;
+
 }
 
 .links a {
     color:black;
     font-size: 25px;
-    border-bottom: 1px solid #dfdfdf;
+    border-bottom: 1px solid #000;
+    
+
 }
 
 header {
@@ -56,9 +62,26 @@ h1 {
 }
 
 h2 {
-    font-family: "Oswald", Helvetica, sans-serif;
-  font-weight: 600;
-  letter-spacing: -1.5px;
+    font-family: 'action_manregular', Helvetica, sans-serif;
+  font-size:15px;
 }
 
+.next-quote {
+    font-family: 'belligerent_madnessregular', Helvetica, sans-serif;
+    color:#f84342;
+    font-size:20px;
+}
+
+.dangling {
+    font-family: 'action_manregular', Helvetica, sans-serif;
+    font-size:22px;
+    text-align:center;
+}
+
+.footer-blurb {
+    font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+    font-style: italic;
+    text-align:right;
+    font-size:10px;
+}
 

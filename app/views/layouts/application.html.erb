@@ -30,17 +30,26 @@
 <hr />
 <br class="clear" />
 
+<div class="col-xs-4 dangling">
+	You might be a Malmfeldt if...
+</div>
+
+<br class="clear" />
+
 <div class="container">
 <%= yield %>
 </div>
 
 <div class="footer">
-	<div class="col-xs-6">
-		<% link_to "This isn't enough, I need more", "#" %>
-	</div>
+	<div class="container">
+		<div class="col-xs-6">
+			<%= link_to "This isn't enough, I need more", "#", :class => 'next-quote' %>
+		</div>
 
-	<div class="col-xs-6">
-		Proudly hacked in Stephens City, VA by <a href="https://www.linkedin.com/hp/?dnr=eYej2zBLhH-ffLzvSYZj5215R7ZMfkQwwj4a&trk=nav_responsive_tab_home">Michael Malmfeldt</a>
+		<div class="col-xs-6 footer-blurb">
+			Proudly hacked in Stephens City, VA by <a href="https://www.linkedin.com/hp/?dnr=eYej2zBLhH-ffLzvSYZj5215R7ZMfkQwwj4a&trk=nav_responsive_tab_home">Michael Malmfeldt</a>
+		</div>
+
 	</div>
 </div>
 
