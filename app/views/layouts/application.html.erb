@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Malmy</title>
-  <%= stylesheet_link_tag    "application", "master", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "application", "master", "footer", "fonts", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -30,7 +30,19 @@
 <hr />
 <br class="clear" />
 
+<div class="container">
 <%= yield %>
+</div>
+
+<div class="footer">
+	<div class="col-xs-6">
+		<% link_to "This isn't enough, I need more", "#" %>
+	</div>
+
+	<div class="col-xs-6">
+		Proudly hacked in Stephens City, VA by <a href="https://www.linkedin.com/hp/?dnr=eYej2zBLhH-ffLzvSYZj5215R7ZMfkQwwj4a&trk=nav_responsive_tab_home">Michael Malmfeldt</a>
+	</div>
+</div>
 
 </body>
 </html>
