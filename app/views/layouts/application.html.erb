@@ -2,10 +2,12 @@
 <html>
 <head>
   <title>MalmyApp</title>
+  
   <%= stylesheet_link_tag    "application", "master", "footer", "fonts", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-</head>
+</heads>
+
 <body>
 	<header>
 		<div class="col-xs-3">
@@ -22,21 +24,49 @@
 
 	   	 </div>
 		
-	<div class="col-xs-4 slogan">
+	<div class="col-sm-4 hidden-xs slogan">
 		Letting you know that you are one of the cursed/chosen since 2015
 	</div>
-	<div class="col-xs-5 links">
-		<%= link_to 'Contribute', new_quote_path %>
-		<%= link_to 'About', '#' %>
+	<div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-5 links">
+		 <!-- Button trigger modal -->
+      <%= link_to 'Contribute', '#', :data => {:toggle =>'modal',  :target =>'#myModal'} %>
+        
+      </button>
+
+		<%= link_to 'About', about_path %>
 	</div>
 </header>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">Contribute your wisdom</h4>
+        </div>
+	       	<%= simple_form_for Quote.new do |f| %>
+					<%= f.input :saying, :label => "What characteristic do you think makes someone a Malmfeldt?", :placeholder => "Type characteristic here: ex. You have bad breath!" %>
+					<br />
+					<%= f.input :author, :label => "Who are you?", :placeholder =>"Type your name here: ex. George Bush" %>
+					<br />
+					<%= f.submit 'Create', :class => 'btn btn-danger' %>
+				<% end %>
+        	</div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+	       
+	          
+      </div>
+    </div>
+  </div>
+
 <hr />
-<br class="clear" />
-
-<div class="col-xs-4 dangling">
-	You might be a Malmfeldt if...
-</div>
-
 <br class="clear" />
 
 <div class="container">
@@ -51,16 +81,20 @@
 
 <div class="footer">
 	<div class="container">
-		<div class="col-xs-6">
+		<div class="col-xs-12 col-sm-6">
 			<%= link_to "This isn't enough, I need more", root_path, :class => 'next-quote' %>
 		</div>
 
-		<div class="col-xs-6 footer-blurb">
+		<div class="col-xs-12 col-sm-6 footer-blurb">
 			Proudly hacked in Stephens City, VA by <a href="https://www.linkedin.com/hp/?dnr=eYej2zBLhH-ffLzvSYZj5215R7ZMfkQwwj4a&trk=nav_responsive_tab_home">Michael Malmfeldt</a>
 		</div>
 
 	</div>
 </div>
+<br/>
+<br/>
+<br/>
+<br/>
 
 </body>
 </html>

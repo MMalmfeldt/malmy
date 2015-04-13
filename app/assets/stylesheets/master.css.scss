@@ -61,13 +61,17 @@ hr {
 h1 {
     font-family: 'action_manregular', Helvetica, sans-serif;
     font-weight:bold;
+    font-size:60px;
 }
 
 h2 {
     font-family: 'action_manregular', Helvetica, sans-serif;
-  font-size:15px;
+  font-size:25px;
 }
 
+h2 span {
+    color: #dddddd;
+}
 .next-quote {
     font-family: 'belligerent_madnessregular', Helvetica, sans-serif;
     color:#f84342;
@@ -80,6 +84,11 @@ h2 {
     text-align:center;
 }
 
+@media (max-width:750px) {
+    .footer-blurb {
+        text-align: left;
+    }
+}
 .footer-blurb {
     font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
     font-style: italic;
@@ -91,3 +100,26 @@ h2 {
     text-decoration:none;
 }
 
+.about {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+}
+p {
+    font-family: 'action_manregular', Helvetica, sans-serif;
+    font-size:14px;
+}
+
+.text-center {
+    text-weight: bold;
+}
+.modal {
+    font-family: 'action_manregular', Helvetica, sans-serif;
+    font-size:22px;
+}
+
+.saying {
+    text-size: 300px;
+}
+
+::selection {
+    background-color: #f84342;
+}
